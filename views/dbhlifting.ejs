@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://adpmet.or.id/assets/img/logo/logo-adpmet.PNG" type="image/gif" sizes="16x16">
+
+    <!-- Primary Meta Tags -->
+    <title>ADPMET - DBH & Lifting - <%= judul %></title>
+    <meta name="title" content="ADPMET - DBH & Lifting - <%= judul %>">
+    <meta name="description" content="ADPMET - DBH & Lifting - <%= judul %>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="fb:app_id" content="218423426955156">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content=<%= url %>>
+    <meta property="og:title" content="ADPMET - DBH & Lifting - <%= judul %>">
+    <meta property="og:description" content="ADPMET berita terbaru - <%= judul %>">
+    <meta property="og:image" content=<%= thumbnail %>>
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content=<%= url %>>
+    <meta property="twitter:title" content="ADPMET - DBH & Lifting - <%= judul %>">
+    <meta property="twitter:description" content="ADPMET DBH & Lifting - <%= judul %>">
+    <meta property="twitter:image" content=<%= thumbnail %>>
+    <!-- Bootstrap 5 CDN Start-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
+    crossorigin="anonymous">
+    <!-- Bootstrap 5 CDN End-->
+    <!-- Font-Awesome Start -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+    crossorigin="anonymous">
+    <!-- FontAwesome End -->
+    <!-- DataTables Start -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap5.min.css">
+    <!-- DataTables End -->
+    <!-- Custom CSS Start -->
+    <link rel="stylesheet" href="https://adpmet.or.id/assets/style/style.css">
+    <link rel="stylesheet" href="https://adpmet.or.id/assets/style/responsive.css">
+    <!-- Custom CSS End -->
+</head>
+<body class="bg-custom4">
+
+    <div id="loader"></div>
+
+    <div id="header">
+    <!-- Start Headbar -->
+    <section class="headbar">
+        <div class="container-fluid bg-custom1">
+            <div class="container">
+                <div class="d-flex justify-content-end">
+                    <span>Follow Us :</span>    
+                    <div class="social-media-icons">
+                        <div class="justify-content-between">
+                            <a href="https://www.instagram.com/adpmet_official/" target="_blank" class="p-2"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/ADPMET/" target="_blank" class="p-2"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/adpmet"target="_blank" class="p-2"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/channel/UCLiCXFZ18nHUynz8NDlPTlw/featured" class="p-2"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Headbar -->
+        
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg bg-custom4 navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="https://adpmet.or.id">
+                <img src="https://adpmet.or.id/assets/img/logo/navbar-Icon.svg" class="logo-image" alt="logo-image">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto flex-nowrap me-5">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://adpmet.or.id">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Profile
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://adpmet.or.id/struktur.html">Struktur Organisasi</a>
+                            <a class="dropdown-item" href="https://adpmet.or.id/visimisi.html">Visi Misi</a>
+                            <a class="dropdown-item" href="https://adpmet.or.id/sejarah.html">Sejarah</a>
+                            <a class="dropdown-item" href="https://adpmet.or.id/programkerja.html">Program Kerja</a>
+                          </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Repository
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://adpmet.or.id/peraturan.html">Peraturan</a>
+                            <a class="dropdown-item" href="https://adpmet.or.id/pengumuman.html">Pengumuman</a>
+                            <a class="dropdown-item" href="https://adpmet.or.id/referensi.html">Referensi</a>
+                          </div>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btnMembership" class="nav-link" href="#">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portal</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a id="profile_nama" class="nav-link" href="https://adpmet.or.id/page/login.html"><i class="fas fa-sign-in-alt"></i> Log In</a>
+                    </li>
+                    <li class="nav-item ms-3" id="profile_logout">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+    <!-- End Navbar -->
+
+    <div class="border-bottom bg-custom1 mb-3 border-success"></div>
+
+    <!-- Start Head  -->
+    <div class="container">
+        <div class="container-fluid">
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://adpmet.or.id">Beranda</a></li>
+                <li class="breadcrumb-item"><a href="https://adpmet.or.id/listdbhlifting.html">Index DBH & Lifting</a></li>
+            </ol>
+        </nav>
+        <hr>
+       
+            <h3 class="text-center" id="itemTitle"></h3>
+            <span class="small-text text-muted text-capitalize" id="itemDate"></span>
+            <div class="mb-3"></div>
+            <div class="row g-5">
+                <div class="col-md-8" >
+                    <div class="col-12" id="itemImage"></div>
+                    <div class="col-12" id="itemContent">
+
+                    </div>
+                </div>
+
+                    <div class="col-md-4" >
+                    <div style="top: 2rem;">
+                        <div class="p-4 mb-3 rounded">
+                            <h4 class="fst-italic">Indeks DBH & Lifting</h4>
+                            <ul class="list-group overflow-auto" id="indexList">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+    </div>
+
+    <ul id="floating-share-buttons">
+        <li><a href="#" onclick="getFbURL()" class="share-facebook" id="fb-share-button" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" onclick="getWaURL()" class="share-whatsapp" id="wa-share-button" data-action="share/whatsapp/share" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="#" onclick="getTwURL()" class="share-twitter" id="tw-share-button" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" class="share-linkedin" id="li-share-button" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#" class="share-mail" id="mail-share-button" target="_blank"><i class="fa fa-envelope"></i></a></li>
+    </ul>
+    <hr>
+    <!-- Start Footer Section -->
+    <footer class="footer bg-custom4 text-center text-lg-start">
+
+        <div class="container p-4">
+    
+          <div class="row">
+    
+            <div class="col-lg-6">
+              <img src="https://adpmet.or.id/assets/img/logo/navbar-Icon.svg" alt="adpmet-logo">
+            </div>
+    
+            <div class="col">
+              <h5 class="text-dark">Social Media</h5>
+      
+              <ul class="list-unstyled mb-0" id="footer-sosmed">
+                
+              </ul>
+            </div>
+    
+            <div class="col">
+              <h5 class="text-dark mb-0">Phone</h5>
+      
+              <ul class="list-unstyled" id="footer-contact">
+                
+              </ul>
+            </div>
+            </div>
+        </div>
+           <!-- Copyright -->
+        <div class="text-center p-3 bg-custom1 text-white" id="footer-address">
+            
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Bootstrap Script Start -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <!-- Bootstrap Script End -->
+
+    <!-- JQuery Start -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <!-- Main Script Start -->
+    <script src="https://adpmet.or.id/assets/scripts/global/global.js"></script>
+    <script src="https://adpmet.or.id/assets/scripts/api.js"></script>
+    <script src="https://adpmet.or.id/assets/scripts/loading.js"></script>
+    <script src="https://adpmet.or.id/assets/scripts/script.js"></script>
+    <script src="https://adpmet.or.id/assets/scripts/share.js"></script>
+    <script src="https://adpmet.or.id/assets/scripts/main.js"></script>
+    <script src="https://adpmet.or.id/assets/scripts/getfooter.js"></script>
+    <script src="https://adpmet.or.id/assets/scripts/global/MockData/mockDbhLifting.js"></script>
+    <script src="https://adpmet.or.id/assets/scripts/dbhlifting-detail.js"></script>
+    
+    <!-- Main Script End -->
+
+    <!-- Plugins Start -->
+    <script src="https://cdn2.woxo.tech/a.js#6093a9346a9ae70015dececf" async data-usrc></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.11/sorting/date-eu.js"></script>
+    <!-- Plugins End -->
+
+    <!-- Kirim token -->
+    <script>
+        $(document).ready(function() {
+           $.ajax({
+               type: "GET",
+               url: api_url + "profile",
+               // data: formData,
+               // Fetch the stored token from localStorage and set in the header
+               headers:{"Authorization":"Bearer "+localStorage.getItem("access_token")},
+               dataType: "json",
+               encode: true,
+               success: function(data){
+                   event.preventDefault();
+                   // console.log(data);
+               $("#profile_nama").html(`
+                   <strong>${data.data.name}</strong></a>
+               
+               `);
+               $("#profile_logout").html(`
+                   <a id="btn-logout" class="nav-link" href="#"></i>Log Out</a>
+               `);
+               }
+           });
+       }); 
+    </script>
+
+    <script>
+        $("#profile_logout").click(function (event) {
+                // console.log("btn-clicked")
+                localStorage.clear();
+                // console.log(localStorage.access_token);
+                location.replace("https://adpmet.or.id/page/login.html")
+        });
+
+        $("#btnMembership").click(function (event) {
+            // console.log("btn-clicked")
+            if(localStorage.length == 1){
+                location.replace("https://adpmet.or.id/membership.html")
+            } else {
+                location.replace("https://adpmet.or.id/page/login.html")
+
+            }
+        });
+    </script>
+
+</body>
+</html>
